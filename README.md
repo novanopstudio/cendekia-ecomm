@@ -1,6 +1,14 @@
-Cendekia Organic Ecommerce
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/nova-nurhamdani/)
 
-LIVE PREVIEW HERE(http://cendekia.novanop.com)
+## Cendekia Organic Ecommerce
+
+[LIVE PREVIEW HERE](http://cendekia.novanop.com)
+
+Technologies
 
 
 
