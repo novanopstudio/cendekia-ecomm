@@ -1,0 +1,175 @@
+.menu {
+    &-mobile-search {
+        display: none;
+        @include mq(md) {
+          display: block;
+          margin-top: 20px;
+        }
+        .menu-search {
+          display: block;
+          width: 100%;
+          .ant-select-selector {
+            background-color: #f6f6f6;
+          }
+        }
+    }
+    background-color: #fff;
+    padding: emCal(45, 15) 0;
+    @include mq(md) {
+        margin-bottom: emCal(14, 10);
+    }
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-sidebar-opener {
+        display: none;
+        @include mq(md) {
+            display: block;
+        }
+        &:hover {
+            div {
+              &:nth-child(1),
+              &:nth-child(3) {
+                width: emCal(16, 25);
+              }
+            }
+        }
+        div {
+            height: 2px;
+            background-color: #009245;
+            width: emCal(16, 30);
+            margin-bottom: emCal(16, 5);
+            transition: $transition;
+            &:last-child {
+              margin-bottom: 0;
+            }
+        }
+    }
+    &-sidebar {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .ant-menu {
+          border-right: 0;
+          li {
+            font-weight: 600;
+            text-transform: capitalize;
+          }
+        }
+    }
+    &-logo {
+        a {
+            display:block;
+            img {
+                max-width: 150px;
+            }
+        }
+    }
+    &-search {
+        width: 55%;
+        @include mq(md) {
+            display: none;
+        }
+        &__form {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            &-select {
+              // border-right: 1px solid setShadeColor(border);
+              margin-right: -1px;
+              &.ant-select {
+                .ant-select-selector {
+                  background-color: darken(setColor(light), 5%);
+                  color: #009245;
+                  border: 1px 0 1px 1px;
+                  border-color: #009245;
+                  box-shadow: none;
+                  border-radius: emCal(16, 5) 0 0 emCal(16, 5);
+                  height: emCal(16, 45);
+                  .ant-select-selection-item {
+                    font-size: emCal(16, 15);
+                    font-weight: 800;
+                    line-height: emCal(15, 45);
+                    text-transform: capitalize;
+                  }       
+                }
+              }
+            }
+            &-input {
+                display: flex;
+                flex-grow: 1;
+                .ant-select {
+                    width: 100%;
+                    .ant-select-selector {
+                        height: emCal(15, 45);
+                        border: 1;
+                        border-color: #009245;
+                        font-size: emCal(16, 15);
+                        border-radius: 0;
+                        .ant-select-selection-search {
+                          input {
+                            height: 100%;
+                          }
+                        }
+                        .ant-select-selection-placeholder {
+                          line-height: emCal(15, 45);
+                        }
+                    }
+                }
+                .ant-btn {
+                    height: emCal(16, 45);
+                    background-color: #009245;
+                    border: 0;
+                    color: #fff;
+                    border-radius: 0 emCal(16, 5) emCal(16, 5) 0;
+                    &:hover {
+                      background-color: darken(#009245, 10%);
+                    }
+                }
+            }
+        }
+    }
+    &-functions {
+        display: flex;
+        align-items: center;
+        .ant-btn {
+            height: emCal(13, 35);
+            font-size: emCal(16, 13);
+            font-weight: 500;
+            text-transform: uppercase;
+            border: 0;
+            color: #fff;
+            background-color: setColor(blue);
+            letter-spacing: emCal(13, 1.3);
+            margin-right: emCal(13, 30);
+            &:hover {
+              background-color: darken(setColor(blue), 10%);
+            }
+            @include mq(lg) {
+              display: none;
+            }
+        }
+        .menu-function-item {
+            position:relative;
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-right: emCal(16, 28);
+            }
+            span {
+                position: absolute;
+                top: -3px;
+                right: -8px;
+                height: emCal(11, 18);
+                width: emCal(11, 18);
+                background-color: setColor(green);
+                font-size: 11px;
+                color: #fff;
+                text-align: center;
+                border-radius: 999px;
+            }
+
+        }
+    }
+}

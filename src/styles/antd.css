@@ -1,0 +1,77 @@
+@import 'antd/dist/antd.css';
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-color: #8CC63F;
+    border-right-width: 1px !important;
+    outline: 0;
+    box-shadow: none;
+}
+
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+    border-color: #8CC63F;
+    border-right-width: 1px !important;
+}
+
+.ant-divider {
+    margin-bottom: 10px;
+    border-top: 1px solid rgba(179,169,161,0.5);
+}
+
+.ant-menu-item::after {
+    border-right: 3px solid #8CC63F !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color:  #eaffcf !important;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background-color: #eaffcf !important;
+    
+}
+
+.ant-select-item-option {
+    text-transform: capitalize !important;
+    margin-right: emCal(16, 15);
+}
+
+.ant-menu-item-selected a,
+.ant-menu-item-selected a:hover {
+    color: #8CC63F !important;
+}
+
+.ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
+    max-width: 80vw;
+}
+
+.ant-back-top {
+    color: #263A96 !important;
+    right: 50px;
+}
+
+.ant-modal {
+    max-width: 90vw;
+}
+
+.ant-message {
+    bottom: 20px;
+    top: initial;
+}
+
+.ant-message-notice {
+    text-align: left;
+}
+
+.ant-input:hover {
+    border-color: #8CC63F !important;
+    border-right-width: 1px !important;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+    border-color: #8CC63F !important;
+    border-right-width: 1px !important;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(140, 198, 63, 0.2);
+}
+

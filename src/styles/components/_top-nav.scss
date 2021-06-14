@@ -1,0 +1,39 @@
+.top-nav {
+    background-color: setColor(light);
+    border-bottom: 1px solid rgba(#fff, 20%);
+    padding: emCal(16, 6) 0;
+    @include mq(md) {
+        display: none;
+    }
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-links {
+      display: flex;
+      &__item {
+          margin-right: emCal(16, 30);
+        a {
+          @include link(
+            $fsz: emCal(16, 15),
+            $color: #B3A9A1,
+            $hvr-color: darken(#B3A9A1, 10%)
+          );
+          display: inline-block;
+          i {
+            margin-right: emCal(16, 10);
+          }
+        }
+      }
+    }
+    &-phone {
+      display: flex;
+      span {
+        @include typo(
+          $fsz: emCal(18,15),
+          $color: green,
+        )
+      }
+    }
+}

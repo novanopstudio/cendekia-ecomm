@@ -1,0 +1,14 @@
+.checkout-complete {
+    margin-bottom: remCal(80);
+    .ant-btn {
+      background-color: setColor(blue);
+      font-size: emCal(16, 15);
+      height: emCal(15, 50);
+      padding: 0 emCal(15, 30);
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    
+}
+  
